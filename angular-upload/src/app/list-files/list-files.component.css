@@ -1,0 +1,61 @@
+.total-files{
+    height:100%;  
+}
+    .list-files{
+        background-color: #e2f2fd;
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        /* justify-content: center;  alinha os itens do grid*/
+        justify-items: center/* alinha o conteudo do item do grid*/
+        
+    }
+        .card-file-files{
+            position: relative;
+            width:8rem;
+            height: 10rem;
+            background-color: rgba(216, 216, 216, 0.288);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 1rem; 
+            border-radius: 0.3rem;
+            color: rgb(94, 93, 93);
+            text-overflow: hidden;
+            
+        }
+            img{
+                /* margin: auto; */
+                width:100%;
+                height:100%;
+                cursor:pointer;
+                border-radius: 5px;
+            }
+            .description{
+                width: 100%;
+                height:0px;
+                background-color: #1b4965af;
+                display: flex;
+                flex-direction: column;
+                border-radius: 0 0 5px 5px;
+                color:white;
+                cursor: pointer;
+                overflow: hidden;
+                position: absolute;
+                bottom:0;
+                transition:height 1s;
+            }
+            .card-file-files:hover .description{
+                height: 44%;
+                transition:height 1s;
+            }
+            .span-datetime{
+                margin-top: 0.2rem;
+                width:80%;
+            }
+            span{
+                margin: 0 auto;
+            }
+        .p-error{
+            text-align: center;
+        }

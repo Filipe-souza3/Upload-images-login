@@ -1,0 +1,9 @@
+<div class="total-file">
+    <div class="div-file" *ngIf="card">
+        <h4>{{file.name}} {{file.id}}</h4>
+        <img [src]="file.path" alt="">
+        <span class="span-datetime">{{file.datetimeString}}</span>
+    </div>
+    <span>{{error}}</span>
+    <app-loading *ngIf="loading" class="loading"></app-loading>
+</div>

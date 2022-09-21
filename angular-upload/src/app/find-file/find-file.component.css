@@ -1,0 +1,33 @@
+.total-file{
+    width:100%;
+    min-height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .div-file{
+        /* margin: auto; */
+        width:8rem;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(216, 216, 216, 0.288);
+    }
+        h4, span{
+            text-align: center;
+        }
+        img{
+            margin: auto;
+        }
+        span{
+            margin-top: 1rem;
+        }
+        .span-datetime{
+            width: 80%;
+            margin:auto;
+            text-align: center;
+        }
+    .loading{
+        /* margin: auto; */
+    }
+    

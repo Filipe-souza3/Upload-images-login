@@ -1,0 +1,178 @@
+html, body{
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 100%;
+}
+    .total-login{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        background-color: #e2f2fd;
+    }
+        form{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            width:15%;
+            text-align: center;
+            background-color: white;
+            padding:3rem;
+            border-radius: 1rem;
+            box-shadow: 10px 10px 64px 0px rgba(180, 180, 207, 0.75);
+        }
+            button{
+                margin-top:26px;
+            }
+            span{
+                word-wrap: break-word;
+            }
+            .signin{
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              width:100%;
+              height:2rem;
+            }
+              h2{
+                color:#1b4965;
+                margin-left:0.5rem;
+              }
+
+
+
+
+/* INPUTS */
+/* From uiverse.io by @mrhyddenn */
+.form__group {
+    position: relative;
+    padding: 20px 0 0;
+    margin-top: 10px;
+    width: 100%;
+    /* max-width: 180px; */
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #5fa8d3;
+    outline: 0;
+    font-size: 17px;
+    color: rgb(73, 73, 73);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    /* color: #9b9b9b; */
+    color: #6b6b6b;
+    pointer-events: none;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 7px;
+    font-weight: 500;
+    border-width: 2px;
+    border-image: linear-gradient(to right, #1b4965, #1b4965);
+    border-image-slice: 1;
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #1b4965;
+    font-weight: 600;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+
+
+
+  /* BUTTON */
+  /* From uiverse.io */
+.button {
+    display: inline-block;
+    padding: 8px 8px;
+    border: 3px solid #cae9ff;
+    border-radius: 14px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    z-index: 1;
+    background-color: #5fa8d3;
+    --color-bg:#1b4965;
+   }
+   
+   .button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: var(--color-bg);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .button:hover {
+    color: #ffffff;
+    border: 3px solid #cae9ff;
+   }
+   
+   .button:hover:before {
+    top: -35%;
+    background-color: var(--color-bg);
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+   
+   .button:hover:after {
+    top: -45%;
+    background-color: var(--color-bg);
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }

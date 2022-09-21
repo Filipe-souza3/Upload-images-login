@@ -1,0 +1,20 @@
+<div class="total-files">
+    <app-loading *ngIf="loading"></app-loading>
+    <div class="list-files">
+        <div class="card-file-files" *ngFor="let f of files.files" >
+            <app-btn-delete [fileId]="f.id!" (refresh)="refresh($event)"  (errorDel)="errorDel($event)"></app-btn-delete>
+            <img [src]="f.path" alt="picture" (click)="redirectImage(f.id!)">
+            <div class="description" (click)="redirectImage(f.id!)">
+                <span><strong>{{f.name}} {{f.id}}</strong></span>
+                <span class="span-datetime">{{f.datetimeString}}</span>
+            </div>
+        </div>
+    </div>
+    <p class="p-error">{{this.error}}</p>
+</div>
+
+
+
+
+
+

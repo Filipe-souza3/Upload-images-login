@@ -1,0 +1,13 @@
+img{
+    opacity:0.5;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right:-9px;
+    top:-9px;
+    cursor: pointer;
+}
+img:hover{
+    opacity:1;
+    transition: opacity 0.5s;
+}

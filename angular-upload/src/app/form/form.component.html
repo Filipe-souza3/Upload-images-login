@@ -1,0 +1,19 @@
+<div class="div-form">
+    <form [formGroup]="fg" (ngSubmit)="send()" enctype="multipart/form-data">
+        <!-- <label for="">Nome</label>
+        <input type="text" name="name" id="" formControlName="name" [maxlength]="11"> -->
+        <div class="form__group field">
+            <input placeholder="login" class="form__field" type="text" formControlName="name" [maxlength]="11">
+            <label class="form__label" for="login">Nome</label>
+        </div>
+        <div class="div-input-file">
+            <label for="file" class="label-btn-file">Procurar</label>
+            <input type="file" name="" id="file" class="input-file" formControlName="file"  value="Procurar" (change)="getFileInputForm($event)" accept=".jpg, .png, .jpeg">
+        </div>
+        <button type="submit" class="button">Enviar</button>
+        <span>{{error}}</span>
+    </form>
+</div>
+<div class="files">
+    <app-list-files [active] = active></app-list-files>
+</div>
